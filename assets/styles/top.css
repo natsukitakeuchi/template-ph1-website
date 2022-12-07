@@ -1,0 +1,35 @@
+html{
+    font-family: "Noto Sans JP";
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header-ul{
+    display:flex ;
+    list-style: none;
+    align-items:center;
+}
+
+.header-li{
+    margin-left: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.header-li-icon{
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    padding:16px;
+    font-size:0;
+}
+
+.line{
+    background:url()
+}
