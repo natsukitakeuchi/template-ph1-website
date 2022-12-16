@@ -30,6 +30,62 @@ a{
     font-size:0;
 }
 
-.line{
-    background:url()
+.line-box{
+    background-image: url(../img/bg-line.jpg);
+    background-size:cover;
+    width: 984px;
+    height: 357px;
+    border-radius: 48px;
+    position: absolute;
+    margin-top: 1438px;
+    margin-left: 230px;
+}
+
+.line-box::after{
+    content: "";
+    background: #0071bc;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    border-radius: 48px;
+}
+
+.line-box-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 1519px;
+    left: 557px;
+    /*どうしても位置が合わない、、、absoluteで固定しているのに、、、マージンのtop leftは要素の端から？真ん中から*/
+}
+
+.posse-official-line{
+    width: 281px;
+    height: 65px;
+    position: absolute;
+    left: 605px;
+    top: 1506px;
+    font-size:36px;
+    font-weight: 700px;
+    line-height: 64.8px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+/*ここもアイコンと一緒でabsoluteで合わせているのに効かない*/
+}
+
+.line-comment{
+    height:66px;
+    width: 535px;
+    position:absolute;
+    top: 1587px;
+    left: 455px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 10%;
+    align-items: center;
+    color: #FFFFFF
 }
