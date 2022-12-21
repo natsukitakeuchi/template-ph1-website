@@ -143,20 +143,75 @@ a{
 }
 
 .footer-logo{
-    text-align: center;
-}
+    /*widthheight書いてなくて文字それぞれが一つの絵ぽいけど大丈夫？*/
+    margin: 0 auto;}
 
 .footer-posse-official-site{
+    width: 118px;
+    height:25px;
+    margin: 0 auto;
     font-size: 14px;
     color: gray;
     line-height: 25.2px;
     font-weight: 400;
     margin-top: 24px;
+    /*POSSEと公式の間にスペース入れた*/
+}
 
+.footer-arrow{
+    width: 12.25px;
+    height: 12.25px;
+    color: gray;
+    position: absolute;
+    bottom: 217px;
+    left: 775px;
+    /*figma通りにしてるのに位置合わない。。。*/
+
+}
+
+.footer-copyright{
+    width: 82px;
+    height: 13px;
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    color: gray;
+    position: absolute;
+    bottom: 31px;
+    right: 679px;
 }
 .footer-instagram{
     width: 25px;
     height: 20px;
-    margin-left: 167px;
+    position: absolute;
+    bottom:142px;
+    left: 737px;
+}
+
+.footer-twitter{
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    bottom:142px;
+    left: 679px;
+}
+
+.footer-instagram,.footer-twitter{
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    padding:16px;
+    font-size:0;
+    margin: 8px;
+    /*しんはでも起きた。ロゴ隠れる、、、*/
+}
+
+.footer-bottom-line{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 80px;
+    border: 1px solid #EEEEEE;
+    b
 
 }
