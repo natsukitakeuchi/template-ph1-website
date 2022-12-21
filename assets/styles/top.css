@@ -37,14 +37,15 @@ a{
     height: 357px;
     border-radius: 48px;
     position: absolute;
-    margin-top: 1438px;
-    margin-left: 230px;
+    top: 1438px;
+    left: 230px;
+    margin-bottom: 80px;
 }
 
 .line-box::after{
     content: "";
     background: #0071bc;
-    position: absolute; 
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -59,7 +60,20 @@ a{
     position: absolute;
     top: 1519px;
     left: 557px;
-    /*どうしても位置が合わない、、、absoluteで固定しているのに、、、マージンのtop leftは要素の端から？真ん中から*/
+    margin-right: 8px;
+    /*背景が白くならない：：after使ってかけようとしてるんだけど、、、*/
+}
+
+.line-box-icon::after{
+    color: white;
+    width: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
 }
 
 .posse-official-line{
@@ -69,12 +83,11 @@ a{
     left: 605px;
     top: 1506px;
     font-size:36px;
-    font-weight: 700px;
+    font-weight: bold;
     line-height: 64.8px;
-    align-items: center;
     text-align: center;
     color: #FFFFFF;
-/*ここもアイコンと一緒でabsoluteで合わせているのに効かない*/
+    margin: 0px;
 }
 
 .line-comment{
@@ -85,7 +98,65 @@ a{
     left: 455px;
     font-weight: 700;
     font-size: 14px;
-    letter-spacing: 10%;
+    font-style: bold;
+    line-height: 22.4px;
     align-items: center;
-    color: #FFFFFF
+    color: #FFFFFF;
+    text-align: center;
+    /*figmaでletterって書いてあるの何？*/
+}
+
+.line-box-button{
+    width: 320px;
+    height: 50px;
+    background-color: white;
+    border-radius: 98px;
+    margin-top: 24px;
+    position: absolute;
+    top: 1677px;
+    left: 563px;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22.4px;
+    /*vertical-alignで上下中央に文字がこない*/
+}
+
+
+.line-box-button-arrow{
+    height: 12.25px;
+    width: 12.25px;
+    position: absolute;
+    top: 10px;
+    right:18.29px;
+}
+
+
+.footer{
+    width: 100%;
+    height: 355px;
+    position: absolute;
+    top: 1875px;
+    left: 0px;
+    text-align: center;
+}
+
+.footer-logo{
+    text-align: center;
+}
+
+.footer-posse-official-site{
+    font-size: 14px;
+    color: gray;
+    line-height: 25.2px;
+    font-weight: 400;
+    margin-top: 24px;
+
+}
+.footer-instagram{
+    width: 25px;
+    height: 20px;
+    margin-left: 167px;
+
 }
