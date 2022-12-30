@@ -6,6 +6,8 @@ html{
     display:flex;
     justify-content: space-between;
     align-items:center;
+    height: 80px;
+    width: 100%;
 }
 
 .header-ul{
@@ -30,6 +32,98 @@ a{
     font-size:0;
 }
 
+.main-hero{
+    width: 976px;
+    height: 680px;
+    position:absolute;
+    top: 80px;
+    right: 0;
+    border-radius: 80px 0 0 80px;
+}
+
+/*ここ！！！！！！！！！！！！！！！！！！！！！！！！！１*/
+.scroll-down{
+    height: 21px;
+    position: absolute;
+    top: 715px;
+    color: #adadad;
+}
+
+li span{
+    color: #333333;
+}
+/*なんか反映されてないね*/
+
+
+.gray-box{
+    width: 500px;
+    height: 281px;
+    position: absolute;
+    top: 278px;
+    left: 80px;
+    background-color: #eff2f5;
+    border-radius: 24px;
+}
+.small-blue-letter{
+    width: 376px;
+    height: 29px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 16px;
+    color: #0071bc;
+    margin-top: 40px;
+}
+
+.big-black-letter{
+    width: 375px;
+    height: 160px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    color: #333;
+    margin: 0 auto;
+}
+
+.about-posse{
+    position: relative;
+}
+.about-posse-black{
+    position: absolute;
+    top: 856px;
+    left: 624px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.about-posse-blue{
+    position: absolute;
+    top: 918px;
+    left: 673px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #0071bc;
+    margin-top: 8px;
+}
+
+.two-blocks{
+    position: absolute;
+    top: 986px;
+    left: 228px;
+    display: flex;
+}
+.about-posse-pic{
+    width: 472px;
+    height: 312px;
+    border-radius: 24px;
+    margin-right: 40px;
+}
+.about-posse-description{
+    width: 472px;
+    height: 175px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25.2px;
+}
 .line-box{
     background-image: url(../img/bg-line.jpg);
     background-size:cover;
@@ -61,7 +155,6 @@ a{
     top: 1519px;
     left: 557px;
     margin-right: 8px;
-    /*背景が白くならない：：after使ってかけようとしてるんだけど、、、*/
 }
 
 .line-box-icon::after{
@@ -103,7 +196,6 @@ a{
     align-items: center;
     color: #FFFFFF;
     text-align: center;
-    /*figmaでletterって書いてあるの何？*/
 }
 
 .line-box-button{
@@ -115,27 +207,61 @@ a{
     position: absolute;
     top: 1677px;
     left: 563px;
-    text-align: center;
-    color: gray;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22.4px;
-    /*vertical-alignで上下中央に文字がこない*/
 }
 
+.line-box-button-letter{
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+    color: #666666;
+}
 
 .line-box-button-arrow{
     height: 12.25px;
     width: 12.25px;
     position: absolute;
-    top: 10px;
-    right:18.29px;
+    top: 19px;
+    left: 287px;
 }
 
+.line-button-still{
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    width: 288px;
+    height: 80px;
+    border-radius: 16px;
+    border-color: transparent;
+    background-color:#5FDF5B;
+    z-index: 20;
+}
 
+.line-button-still-icon{
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    left: 24px;
+    top: 22px;
+}
+.line-button-still-letter{
+    width: 142px;
+    height: 36px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.line-button-still-arrow{
+    color: white;
+    position: absolute;
+    right: 21px;
+    bottom: 31px;
+}
 .footer{
     width: 100%;
     height: 355px;
+    position: relative;
     position: absolute;
     top: 1875px;
     left: 0px;
@@ -143,7 +269,6 @@ a{
 }
 
 .footer-logo{
-    /*widthheight書いてなくて文字それぞれが一つの絵ぽいけど大丈夫？*/
     margin: 0 auto;}
 
 .footer-posse-official-site{
@@ -155,7 +280,6 @@ a{
     line-height: 25.2px;
     font-weight: 400;
     margin-top: 24px;
-    /*POSSEと公式の間にスペース入れた*/
 }
 
 .footer-arrow{
@@ -163,10 +287,8 @@ a{
     height: 12.25px;
     color: gray;
     position: absolute;
-    bottom: 217px;
-    left: 775px;
-    /*figma通りにしてるのに位置合わない。。。*/
-
+    top: 65px;
+    left: 780px;
 }
 
 .footer-copyright{
@@ -186,7 +308,7 @@ a{
     height: 20px;
     position: absolute;
     bottom:142px;
-    left: 737px;
+    left:737px;
 }
 
 .footer-twitter{
@@ -194,16 +316,15 @@ a{
     height: 20px;
     position: absolute;
     bottom:142px;
-    left: 679px;
+    left: 630px;
 }
 
 .footer-instagram,.footer-twitter{
     border: 1px solid #EEEEEE;
     border-radius: 50%;
-    padding:16px;
+    padding: 16px;
     font-size:0;
     margin: 8px;
-    /*しんはでも起きた。ロゴ隠れる、、、*/
 }
 
 .footer-bottom-line{
@@ -212,6 +333,4 @@ a{
     position: absolute;
     bottom: 80px;
     border: 1px solid #EEEEEE;
-    b
-
 }
