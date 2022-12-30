@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head><link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/quiz.css">
     <meta charset="utf-8">
-    <title>サイトのタイトル</title>
+    <title>クイズページ</title>
 </head>
 <body>
-    <h1>大見出し１</h1>
-    <p>文章文章文章文章</p>
+    <header class="header">
+        <div class="header-posse-icon">
+            <img src="assets/img/logo.svg" alt="POSSEのロゴ">
+        </div>
+        <div class="header-nav-icon">
+            <ul class="header-ul">
+                <li class="header-li"><a href="toppage index.html">POSSEとは</a></li>
+                <li class="header-li"><a href="quizpage index.html">クイズ</a></li>
+                <li class="header-li header-li-icon"><a href="https://twitter.com/posse_program"><img src="assets/img/icon/icon-twitter.svg" alt="ツイッター"></a></li>
+                <li class="header-li header-li-icon"><a href="https://www.instagram.com/posse_programming/"><img src="assets/img/icon/icon-instagram.svg" alt="インスタグラム"></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <img class="hero-pic" src="./assets/img/quiz/bg-hero.jpg" alt="ヒーロー写真">
+        <div class="hero-posse-work">POSSE課題</div>
+        <div class="IT-quiz">ITクイズ</div>
+    </main>
+    <main class="q1">
+        <div class="question-1">
+            <div class="question-1-box">
+                <div class="question-1-letter">Q1</div>
+            </div>
+            <div class="question-1-mondai">日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</div>
+            <div><img class="question-1-pic"src="./assets/img/quiz/img-quiz01.png" alt="人めっちゃいる"></div>
+        </div>
+        <div class="answer-1">
+            <div class="answer-1-box">
+                <div class="answer-1-letter">A</div>
+            </div>
+            <button class="option-1">約28万人</button>
+            <button class="option-2">約79万人</button>
+            <button class="option-3">約183万人</button>
+            <button class="reference"><img src=".//assets/img/icon/icon-note.svg" alt="scholar-hat">経済産業省　2019年3月 - IT人材需給に関する調査</button>
+        </div>
+    </main>
+    <main class="q2">
+    </main>
+    <div class="line">
+        <div class="line-box"></div>
+        <div class="line-box-icon">
+            <img src="assets/img/icon/icon-line.svg"alt="ラインの緑アイコン">
+        </div>
+
+        <p class="posse-official-line">
+            POSSE   公式LINE
+        </p>
+        <p class="line-comment">
+                公式LINEにてご質問を随時受け付けております。<br>
+                詳細やPOSSE最新情報につきましては、公式LINEにてお知らせ致しますので<br>下記ボタンより友達追加をお願いします！
+        </p>
+        <div class="line-box-button">
+            <p class="line-box-button-letter">LINE追加</p>
+            <img class="line-box-button-arrow" src="./assets/img/icon/icon-link-gray-dark.svg" alt="リンク先に飛ぶ箱と矢印">
+        </div>
+    </div>
 </body>
+<footer class="footer">
+    <img class="footer-arrow" src="./assets/img/icon/icon-link-gray-dark.svg" alt="やじるし">
+    <img class="footer-logo" src="./assets/img/logo.svg" alt="POSSEのロゴ">
+    <img class="footer-instagram" src="./assets/img/icon/icon-instagram.svg" alt="インスタロゴ">
+    <img class="footer-twitter" src="./assets/img/icon/icon-twitter.svg" alt="ツイッターロゴ">
+    <p class="footer-posse-official-site">POSSE公式サイト</p>
+    <p class="footer-copyright">©︎2022 POSSE</p>
+    <div class="footer-bottom-line"></div>
+</footer>
 </html>

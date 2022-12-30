@@ -1,0 +1,301 @@
+html{
+    font-family: "Noto Sans JP";
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 80px;
+    width: 100%;
+}
+
+.header-ul{
+    display:flex ;
+    list-style: none;
+    align-items:center;
+}
+
+.header-li{
+    margin-left: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.header-li-icon{
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    padding:16px;
+    font-size:0;
+}
+
+.hero-pic{
+    width: 100%;
+    height: 320px;
+}
+
+.hero-posse-work{
+    width: 96px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 180%;
+    color: #eff2f5;
+    position: absolute;
+    top: 190px;
+    left: 204px;
+
+}
+
+.IT-quiz{
+    width: 236px;
+    height: 90px;
+    font-size: 60px;
+    font-style:normal;
+    color: #eff2f5;
+    position: absolute;
+    top: 234px;
+    left: 204px;
+}
+
+.q1{
+    position: relative;
+}
+.question-1-box{
+    width: 85px;
+    height: 70px;
+    background-color: #0071bc;
+    border-radius: 8px;
+    position: absolute;
+    top: 128px;
+    left: 228px;
+}
+
+.question-1-letter{
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 70px;
+    font-size: 36px;
+    font-weight: 700;
+}
+.question-1-mondai{
+    width: 984px;
+    height: 108px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    position: absolute;
+    top: 214px;
+    left: 228px;
+    margin-top: 32px;
+}
+.question-1-pic{
+    width: 700px;
+    height: auto;
+    position: absolute;
+    top: 398px;
+    left: 361px;
+}
+.answer-1-box{
+    width: 58px;
+    height: 70px;
+    background-color:#E34E70;
+    border-radius: 8px;
+    position: absolute;
+    top: 815px;
+    left: 244px;
+    position: relative;
+}
+
+.answer-1-letter{
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 70px;
+align-items: center;
+vertical-align: middle;
+/*真ん中にこない*/
+
+}
+
+.line-box{
+    background-image: url(../img/bg-line.jpg);
+    background-size:cover;
+    width: 984px;
+    height: 357px;
+    border-radius: 48px;
+    position: absolute;
+    top: 1438px;
+    left: 230px;
+    margin-bottom: 80px;
+}
+
+.line-box::after{
+    content: "";
+    background: #0071bc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    border-radius: 48px;
+}
+
+.line-box-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 1519px;
+    left: 557px;
+    margin-right: 8px;
+}
+
+.line-box-icon::after{
+    color: white;
+    width: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.posse-official-line{
+    width: 281px;
+    height: 65px;
+    position: absolute;
+    left: 605px;
+    top: 1506px;
+    font-size:36px;
+    font-weight: bold;
+    line-height: 64.8px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.line-comment{
+    height:66px;
+    width: 535px;
+    position:absolute;
+    top: 1587px;
+    left: 455px;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: bold;
+    line-height: 22.4px;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.line-box-button{
+    width: 320px;
+    height: 50px;
+    background-color: white;
+    border-radius: 98px;
+    margin-top: 24px;
+    position: absolute;
+    top: 1677px;
+    left: 563px;
+}
+
+.line-box-button-letter{
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+    color: #666666;
+}
+
+.line-box-button-arrow{
+    height: 12.25px;
+    width: 12.25px;
+    position: absolute;
+    top: 19px;
+    left: 287px;
+}
+
+
+.footer{
+    width: 100%;
+    height: 355px;
+    position: relative;
+    position: absolute;
+    top: 1875px;
+    left: 0px;
+    text-align: center;
+}
+
+.footer-logo{
+    margin: 0 auto;}
+
+.footer-posse-official-site{
+    width: 118px;
+    height:25px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: gray;
+    line-height: 25.2px;
+    font-weight: 400;
+    margin-top: 24px;
+}
+
+.footer-arrow{
+    width: 12.25px;
+    height: 12.25px;
+    color: gray;
+    position: absolute;
+    top: 65px;
+    left: 780px;
+}
+
+.footer-copyright{
+    width: 82px;
+    height: 13px;
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    color: gray;
+    position: absolute;
+    bottom: 31px;
+    right: 679px;
+}
+.footer-instagram{
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    bottom:142px;
+    left:737px;
+}
+
+.footer-twitter{
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    bottom:142px;
+    left: 630px;
+}
+
+.footer-instagram,.footer-twitter{
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    padding: 16px;
+    font-size:0;
+    margin: 8px;
+}
+
+.footer-bottom-line{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 80px;
+    border: 1px solid #EEEEEE;
+}
