@@ -108,18 +108,90 @@ a{
     position: absolute;
     top: 815px;
     left: 244px;
-    position: relative;
 }
 
 .answer-1-letter{
     font-size: 36px;
     font-weight: 700;
-    color: #FFFFFF;
+    color:#FFFFFF;
     line-height: 70px;
-align-items: center;
-vertical-align: middle;
-/*真ん中にこない*/
+    text-align: center;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
 
+.option-1, .option-2, .option-3{
+    width: 312px;
+    height: 80px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 32.4px;
+    font-weight: 700;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 5px solid #EEEEEE;
+    margin-top: 24px;
+}
+
+.option-1{
+    position: absolute;
+    top: 893px;
+    left: 228px;
+}
+
+.option-2{
+    position:absolute;
+    top: 893px;
+    left: 564px;
+}
+
+.option-3{
+    position: absolute;
+    top: 893px;
+    left: 900px;
+}
+.option-1-letter,.option-2-letter,.option-3-letter{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    vertical-align: middle;
+}
+.option-arrow{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 32px;
+    left: 272px;
+}
+
+.reference{
+    width: 984px;
+    height: 80px;
+    position: absolute;
+    top: 989px;
+    left: 228px;
+    background: #F6F6F6;
+    border-radius: 8px;
+    border: transparent;
+}
+.reference-icon{
+    Width:24.41px;
+    Height:11.76px;
+    position: absolute;
+    top: 32px;
+    left: 24px;
+}
+
+.reference-letter{
+    width: 411px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 64px;
 }
 
 .line-box{
@@ -132,6 +204,7 @@ vertical-align: middle;
     top: 1438px;
     left: 230px;
     margin-bottom: 80px;
+    
 }
 
 .line-box::after{
