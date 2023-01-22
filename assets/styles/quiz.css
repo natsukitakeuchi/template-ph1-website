@@ -8,7 +8,11 @@ html{
     align-items:center;
     height: 80px;
     width: 100%;
+    position:fixed;
+    background-color: rgb(255, 255, 255);
+    z-index: 900;
 }
+
 
 .header-ul{
     display:flex ;
@@ -32,10 +36,333 @@ a{
     font-size:0;
 }
 
-.hero-pic{
+.hero{
+    padding-top: 90px;
+    background-image: url(../img/quiz/bg-hero.jpg);
+    background-size: cover;
+    height: 160px;
+    width: 1440px;
+    position: relative;
+}
+.hero-posse-work{
+    position: absolute;
+    top: 110px;
+    left: 204px;
+    color: #F6F6F6;
+}
+.hero-quiz{
+    position: absolute;
+    top: 154px;
+    left: 204px;
+    color: #F6F6F6;
+    font-size: 60px;
+    margin-top: 12px;
+}
+.q1{
+    margin: 128px  auto;
+    width:  984px;
+}
+.question-1-pic{
+    text-align: center;
+    margin-top:76px;
+}
+
+.question-1-box{
+    width: 85px;
+    height: 70px;
+    background-color: #0071bc;
+    border-radius: 8px;
+}
+
+.question-1-letter{
+    color: #EEEEEE;
+    text-align: center;
+    line-height: 70px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.question-1-mondai{
+    width: 984px;
+    height: 108px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    margin-top: 24px;
+}
+
+.answer-1-box{
+    width: 58px;
+    height: 70px;
+    background-color:#E34E70;
+    border-radius: 8px;
+    margin-top: 72px;
+}
+
+.answer-1-letter{
+    font-size: 36px;
+    font-weight: 700;
+    color:#FFFFFF;
+    line-height: 70px;
+    text-align: center;
+}
+
+.options{
+    display:flex;
+}
+.option-1{
+    width: 312px;
+    height: 80px;
+    border-radius: 8px;
+    margin: 24px;
+    position: relative;
+}
+.option-2{
+    width: 312px;
+    height: 80px;
+    border-radius: 8px;
+    margin: 24px;
+    position: relative;
+}
+.option-3{
+    width: 312px;
+    height: 80px;
+    border-radius: 8px;
+    margin: 24px;
+    position: relative;
+}
+
+.option-1-letter{
+    font-size: 24px;
+    position: absolute; 
+    left: 24px;
+}
+
+.option-2-letter{
+    font-size: 24px;
+    position: absolute; 
+    left: 24px;
+}
+
+.option-3-letter{
+    font-size: 24px;
+    position: absolute; 
+    left: 24px;
+}
+.option-arrow{
+    position: absolute;
+    right: 32px;
+}
+
+.reference{
+    width: 984px;
+    height: 80px;
+    background: #F6F6F6;
+    border-radius: 8px;
+    border: transparent;
+    position: relative;
+}
+
+.reference-letter{
+    width: 411px;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 64px;
+}
+
+.reference-icon{
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    top: 25px;
+    left: 27px;
+}
+
+.line{
+    width: 984px;
+    height: 357px;
+    border-radius: 48px;
+    background-image:url(../img/bg-line.jpg) ;
+    position: relative;
+    margin-top: 140px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.line::after{
+    content: "";
+    background: #0071bc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    border-radius: 48px;
+}
+
+.line-box-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 81px;
+    left: 327px;
+    z-index: 10;
+}
+.posse-official-line{
+    width: 281px;
+    height: 65px;
+    position: absolute;
+    top: 68px;
+    left: 375px;
+    font-size:36px;
+    font-weight: bold;
+    line-height: 64.8px;
+    color: #FFFFFF;
+    z-index: 10;
+    margin: 0;
+}
+
+.line-comment{
+    height:66px;
+    width: 535px;
+    position:absolute;
+    top: 149px;
+    left: 229px;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: bold;
+    line-height: 22.4px;
+    align-items: center;
+    color:#FFFFFF;
+    text-align: center;
+    z-index: 10;
+    margin-top:16px;
+}
+.line-box-button{
+    width: 320px;
+    height: 50px;
+    background-color: white;
+    border-radius: 98px;
+    margin-top: 24px;
+    position: absolute;
+    top: 239px;
+    left: 339px;
+    z-index: 10;}
+
+.line-box-button-letter{
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+    color: #666666;
+}
+
+.line-box-button-arrow{ 
+    height: 12.25px;
+    width: 12.25px;
+    position: absolute;
+    top: 19px;
+    left: 287px;}
+
+.footer{
+    position: relative;
+}
+
+.footer-bottom-line{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 102px;
+    border: 1px solid #EEEEEE;
+    margin: 0;
+}
+
+.footer-logo{
+    position: absolute;
+    top: 158px;
+    left: 630px;
+}
+
+.footer-posse-official-site{
+    width: 118px;
+    height: 25px;
+    position: absolute;
+    top: 221px;
+    left: 635px;
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+
+.footer-arrow{
+    position: absolute;
+    top: 227px;
+    left: 770px;
+    width: 12.25px;
+    height: 12.25px;
+    color: #666666;
+}
+
+.footer-instagram{
+    position: absolute;
+    top: 296px;
+    left: 730px;
+    color: #666666;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    padding:16px;
+    font-size:0;
+}
+.footer-twitter{
+    position: absolute;
+    top: 296px;
+    left: 660px;
+    color: #666666;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+    padding:16px;
+    font-size:0;
+}
+
+.footer-bottom-2-line{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 376px;
+    border: 1px solid #EEEEEE;
+    margin: 0;
+}
+
+.footer-copyright{
+    position: absolute;
+    top: 412px;
+    left: 679px;
+    width: 82px;
+    height: 13px;
+    font-size: 10px;
+    color: #666666;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+}
+
+/*footerの中身、ロゴと文字整えたら完成*/
+
+
+/* .hero-pic{
     width: 100%;
     height: 320px;
 }
+
 
 .hero-posse-work{
     width: 96px;
@@ -60,28 +387,11 @@ a{
     position: absolute;
     top: 234px;
     left: 204px;
-}
+} */
 
-.q1{
-    position: relative;
-}
-.question-1-box{
-    width: 85px;
-    height: 70px;
-    background-color: #0071bc;
-    border-radius: 8px;
-    position: absolute;
-    top: 128px;
-    left: 228px;
-}
 
-.question-1-letter{
-    color: #FFFFFF;
-    text-align: center;
-    line-height: 70px;
-    font-size: 36px;
-    font-weight: 700;
-}
+
+/*
 .question-1-mondai{
     width: 984px;
     height: 108px;
@@ -192,22 +502,25 @@ a{
     font-weight: 700;
     font-style: normal;
     margin-left: 64px;
-}
+} 
 
-.line-box{
+.line{
+    position: relative;
     background-image: url(../img/bg-line.jpg);
     background-size:cover;
     width: 984px;
     height: 357px;
     border-radius: 48px;
-    position: absolute;
-    top: 1438px;
-    left: 230px;
-    margin-bottom: 80px;
-    
-}
+} */
+/* .line-box{
 
-.line-box::after{
+    width: 984px;
+    height: 357px;
+    border-radius: 48px;
+
+} */
+
+/* .line::after{
     content: "";
     background: #0071bc;
     position: absolute;
@@ -223,8 +536,8 @@ a{
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 1519px;
-    left: 557px;
+    top: 81px;
+    left: 327px;
     margin-right: 8px;
 }
 
@@ -244,13 +557,13 @@ a{
     width: 281px;
     height: 65px;
     position: absolute;
-    left: 605px;
-    top: 1506px;
+    left: 375px;
+    top: 68px;
     font-size:36px;
     font-weight: bold;
     line-height: 64.8px;
     text-align: center;
-    color: #FFFFFF;
+    color: red;
     margin: 0px;
 }
 
@@ -258,14 +571,14 @@ a{
     height:66px;
     width: 535px;
     position:absolute;
-    top: 1587px;
-    left: 455px;
+    top: 149px;
+    left: 225px;
     font-weight: 700;
     font-size: 14px;
     font-style: bold;
     line-height: 22.4px;
     align-items: center;
-    color: #FFFFFF;
+    color: red;
     text-align: center;
 }
 
@@ -276,8 +589,8 @@ a{
     border-radius: 98px;
     margin-top: 24px;
     position: absolute;
-    top: 1677px;
-    left: 563px;
+    top: 239px;
+    left: 333px;
 }
 
 .line-box-button-letter{
@@ -291,8 +604,8 @@ a{
     height: 12.25px;
     width: 12.25px;
     position: absolute;
-    top: 19px;
-    left: 287px;
+    top: 258px;
+    left: 620px;
 }
 
 
@@ -371,4 +684,4 @@ a{
     position: absolute;
     bottom: 80px;
     border: 1px solid #EEEEEE;
-}
+} */

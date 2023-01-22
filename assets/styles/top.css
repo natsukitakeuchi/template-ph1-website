@@ -130,9 +130,9 @@ li span{
     width: 984px;
     height: 357px;
     border-radius: 48px;
-    position: absolute;
+    /* position: absolute;
     top: 1438px;
-    left: 230px;
+    left: 230px; */
     margin-bottom: 80px;
 }
 
