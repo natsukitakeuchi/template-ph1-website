@@ -124,18 +124,18 @@ li span{
     font-size: 14px;
     line-height: 25.2px;
 }
+
+
 .line-box{
-    background-image: url(../img/bg-line.jpg);
-    background-size:cover;
     width: 984px;
     height: 357px;
     border-radius: 48px;
-    /* position: absolute;
-    top: 1438px;
-    left: 230px; */
-    margin-bottom: 80px;
+    background-image:url(../img/bg-line.jpg) ;
+    position: relative;
+    margin-top: 140px;
+    margin: 0 auto;
+    background-size: cover;
 }
-
 .line-box::after{
     content: "";
     background: #0071bc;
@@ -147,7 +147,6 @@ li span{
     opacity: 0.9;
     border-radius: 48px;
 }
-
 .line-box-icon{
     width: 40px;
     height: 40px;

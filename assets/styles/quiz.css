@@ -11,6 +11,8 @@ html{
     position:fixed;
     background-color: rgb(255, 255, 255);
     z-index: 900;
+    top:0;
+    left:0;
 }
 
 
@@ -40,9 +42,10 @@ a{
     padding-top: 90px;
     background-image: url(../img/quiz/bg-hero.jpg);
     background-size: cover;
-    height: 160px;
+    height: 200px;
     width: 1440px;
     position: relative;
+    margin-top: 80px;
 }
 .hero-posse-work{
     position: absolute;
@@ -110,6 +113,11 @@ a{
 .options{
     display:flex;
 }
+.option-1,
+.option-2,
+.option-3{
+    cursor: pointer;
+}
 .option-1{
     width: 312px;
     height: 80px;
@@ -139,9 +147,9 @@ a{
 }
 
 .option-2-letter{
-    font-size: 24px;
+    font-size: 16px;
     position: absolute; 
-    left: 24px;
+    left: 18px;
 }
 
 .option-3-letter{
