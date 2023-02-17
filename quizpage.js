@@ -50,18 +50,26 @@ let question = [
 // ""で囲っても囲わなくてもラベル。囲うと文字列。持ってきかた　
 // console.log( user['name'] );
 // console.log( user.name );
-
+const shuffle=(question)=>{
+    console.log(question)
+    for(let j=question.length-1; j>=0; j--){
+        const k= Math.floor(Math.random()*(j+1));
+        [question[j],question[k]]=[question[k],question[j]];
+        }
+        return question;
+}
+const shuffled_question=shuffle(question);
 let html = ""
-for (let i = 0; i < question.length; i++) {
-    const note=question[i]["note"] ? `<button class="reference"><img class="reference-icon" src=".//assets/img/icon/icon-note.svg" alt="scholar-hat"><p class="reference-letter">${question[i]["note"]}</p>
+for (let i = 0; i < shuffled_question.length; i++) {
+    const note=shuffled_question[i]["note"] ? `<button class="reference"><img class="reference-icon" src=".//assets/img/icon/icon-note.svg" alt="scholar-hat"><p class="reference-letter">${shuffled_question[i]["note"]}</p>
     </button>` : "";
     // console.log(question[i]["note"])
     html += `<div class="q1 js-quiz" data-id=${i}>
         <div class="question-1">
         <div class="question-1-box">
         <p class="question-1-letter">Q${i + 1}</p></div>
-        <div class="question-1-mondai">${question[i]["question_title"]}</div>
-        <div class="question-1-pic"><img src=./assets/img/quiz/${question[i]["img"][0]} alt=${question[i]["img"][1]} width="800"></div>
+        <div class="question-1-mondai">${shuffled_question[i]["question_title"]}</div>
+        <div class="question-1-pic"><img src=./assets/img/quiz/${shuffled_question[i]["img"][0]} alt=${shuffled_question[i]["img"][1]} width="800"></div>
         </div>
         <div class="answer-1">
         <div class="answer-1-box">
@@ -69,13 +77,13 @@ for (let i = 0; i < question.length; i++) {
         </div>
         <div class="options">
         <button class="option-1 js-answer" data-answer="0">
-        <div class="option-1-letter">${question[i]["option"][0]}</div><img class="option-arrow"
+        <div class="option-1-letter">${shuffled_question[i]["option"][0]}</div><img class="option-arrow"
             src=./assets/img/icon/icon-arrow.svg>
         </button>
         <button class="option-2 js-answer" data-answer="1">
-        <div class="option-2-letter">${question[i]["option"][1]}</div><img class="option-arrow" src="./assets/img/icon/icon-arrow.svg" alt=""></button>
+        <div class="option-2-letter">${shuffled_question[i]["option"][1]}</div><img class="option-arrow" src="./assets/img/icon/icon-arrow.svg" alt=""></button>
         <button class="option-3 js-answer" data-answer="2">
-        <div class="option-3-letter">${question[i]["option"][2]}</div><img class="option-arrow" src=./assets/img/icon/icon-arrow.svg>
+        <div class="option-3-letter">${shuffled_question[i]["option"][2]}</div><img class="option-arrow" src=./assets/img/icon/icon-arrow.svg>
         </button>
         </div>
         <div class="answer-hako" id="answer-box">
@@ -101,7 +109,7 @@ const all_quiz=document.querySelectorAll(".js-quiz")
 
 all_quiz.forEach(quiz => {
     const selected_quiz=quiz.getAttribute("data-id")
-    const correct_number=question[selected_quiz].answer_number
+    const correct_number=shuffled_question[selected_quiz].answer_number
     const answers=quiz.querySelectorAll(".js-answer")
     // const answer_box=queryselector("answer-box")
     const answer_box_correct=quiz.querySelector(".answer-box-correct")
@@ -120,15 +128,15 @@ all_quiz.forEach(quiz => {
             answer_box_A.style.display ="block";
             if(correct_number==selected_answer){
                 answer_box_correct.innerHTML="正解！"
-                answer_box_figure.innerHTML=question[selected_quiz].option[correct_number]
-                // correct_number=question[selected_quiz].answer_number
+                answer_box_figure.innerHTML=shuffled_question[selected_quiz].option[correct_number]
+                // correct_number=shuffled_question[selected_quiz].answer_number
                 const answer_correct=quiz.querySelector(".answer-hako")
                 // const answer_correct_figure=quiz.querySelector(".answer-box-correct")107行目と同じだったから消した
                 answer_correct.classList.add('answer-box')
                 answer_box_correct.classList.add('answer-box-correct')
             }else{
                 answer_box_correct.innerHTML="不正解..."
-                answer_box_figure.innerHTML=question[selected_quiz].option[correct_number]
+                answer_box_figure.innerHTML=shuffled_question[selected_quiz].option[correct_number]
                 const answer_incorrect=quiz.querySelector(".answer-hako")
                 const answer_incorrect_figure=quiz.querySelector(".answer-box-correct")
                 answer_incorrect.classList.add('answer-incorrect-background')
@@ -139,3 +147,28 @@ all_quiz.forEach(quiz => {
     })
 })
 
+
+// function doReload(){
+//     // これがreloadメソッド。これでリロードができている。
+//     window.location.reload();
+// }
+// window.addEventListener('doReload',function(){
+//     // setTimeout(doReload,5000);
+//     const shuffle=(shuffled_question)=>{
+//         for(let j=question.length-1; j>=0; j--){
+//             const k= Math.floor(Math.random()*(j+1));
+//             [question[j],question[k]]=[question[j],question[k]];
+//         }
+//         return question;
+//     }
+// })
+
+// const shuffle=(question)=>{
+//     for(let j=question.length-1; j>=0; j--){
+//         const k= Math.floor(Math.random()*(j+1));
+//         [question[j],question[k]]=[question[j],question[k]];
+//         }
+//         return question;
+// }
+
+// const shuffled_question=shuffle(question);
