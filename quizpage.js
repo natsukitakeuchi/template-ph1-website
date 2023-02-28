@@ -50,20 +50,42 @@ let question = [
 // ""で囲っても囲わなくてもラベル。囲うと文字列。持ってきかた　
 // console.log( user['name'] );
 // console.log( user.name );
+
 const shuffle=(question)=>{
-    console.log(question)
     for(let j=question.length-1; j>=0; j--){
         const k= Math.floor(Math.random()*(j+1));
         [question[j],question[k]]=[question[k],question[j]];
         }
         return question;
 }
+// ↑ここでshuffleって書いたらシャッフルされる装置を作った。const shuffle=(question)の括弧内は引数。
 const shuffled_question=shuffle(question);
+
+// for (let i = 0; i < question.length; i++) {
+//     let fetched_options=question[i]["option"]
+//     shuffle(fetched_options)
+// }
+
+
 let html = ""
 for (let i = 0; i < shuffled_question.length; i++) {
     const note=shuffled_question[i]["note"] ? `<button class="reference"><img class="reference-icon" src=".//assets/img/icon/icon-note.svg" alt="scholar-hat"><p class="reference-letter">${shuffled_question[i]["note"]}</p>
     </button>` : "";
+    
     // console.log(question[i]["note"])
+    function shuffled_answer(){
+        let answerhtml=""
+        console.log(answerhtml);
+        for(let n=0;n<3;n++){
+            answerhtml+=`<button class="option-1 js-answer" data-answer="${n}">
+            <div class="option-1-letter">${question[i]["option"][n]}</div><img class="option-arrow"
+        src=./assets/img/icon/icon-arrow.svg>
+        </button>`
+        }
+        console.log(answerhtml)
+        return answerhtml;
+    }
+    
     html += `<div class="q1 js-quiz" data-id=${i}>
         <div class="question-1">
         <div class="question-1-box">
@@ -76,15 +98,7 @@ for (let i = 0; i < shuffled_question.length; i++) {
         <div class="answer-1-letter">A</div>
         </div>
         <div class="options">
-        <button class="option-1 js-answer" data-answer="0">
-        <div class="option-1-letter">${shuffled_question[i]["option"][0]}</div><img class="option-arrow"
-            src=./assets/img/icon/icon-arrow.svg>
-        </button>
-        <button class="option-2 js-answer" data-answer="1">
-        <div class="option-2-letter">${shuffled_question[i]["option"][1]}</div><img class="option-arrow" src="./assets/img/icon/icon-arrow.svg" alt=""></button>
-        <button class="option-3 js-answer" data-answer="2">
-        <div class="option-3-letter">${shuffled_question[i]["option"][2]}</div><img class="option-arrow" src=./assets/img/icon/icon-arrow.svg>
-        </button>
+            ${shuffled_answer}
         </div>
         <div class="answer-hako" id="answer-box">
             <p class="answer-box-correct" id="answer-box-correct"></p>
@@ -94,8 +108,20 @@ for (let i = 0; i < shuffled_question.length; i++) {
         ${note}
         </div>
         </div>
-        </div>`
-}
+        </div>
+        `
+        // let target=shuffled_question[i].querySelector(".options");
+        // console.log(target)
+        // for(let h=target.children.length;h>0;h--){
+        //     target.appendChild(target.children[Math.random()*h|0]);
+        //     console.log(target.appendChild(target.children[Math.random()*h|0]))
+        // }
+    }
+// 選択肢がシャッフルされた後でも正解を選んだら正解としてる。
+// let target=document.querySelector("options");
+// for(let i=target.children.length;i>=0;i--){
+//     target.appendChild(target.children[Math.random()*i|0]);
+// }
 
 let idname = document.getElementById("question")
 idname.innerHTML = html
